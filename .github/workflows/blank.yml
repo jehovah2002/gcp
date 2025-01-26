@@ -24,7 +24,6 @@ jobs:
         name: "gcloud"
         run: |-
           gcloud config set project gcp-labs-s9ajgaz9
-          gcloud config set account 'github-demo-sa@gcp-labs-s9ajgaz9.iam.gserviceaccount.com'
           gcloud auth login --brief --cred-file="${{ steps.auth.outputs.credentials_file_path }}"
           gcloud auth list
           gcloud projects list
