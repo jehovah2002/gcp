@@ -19,7 +19,7 @@ jobs:
         uses: "google-github-actions/auth@v2.1.3"
         with:
           create_credentials_file: "true"
-          workload_identity_provider: "projects/gcp-labs-s9ajgaz9/locations/global/workloadIdentityPools/iam-lab-7-gh-pool/providers/iam-lab-7-gh-pool-oidc-provider" # In the providerId, the numerical project ID (12 digit number) should be used
+          workload_identity_provider: "projects/677028907349/locations/global/workloadIdentityPools/iam-lab-7-gh-pool/providers/iam-lab-7-gh-pool-oidc-provider" # In the providerId, the numerical project ID (12 digit number) should be used
           service_account: "iam-lab-7-target@gcp-labs-s9ajgaz9.iam.gserviceaccount.com" # instead of the alphanumeric project ID. ex:
           activate_credentials_file: true # projects/123123123123/locations/global/workloadIdentityPools/iam-lab-7-gh-pool/providers/iam-lab-7-gh-pool-oidc-provider'
       - id: "gcloud"
