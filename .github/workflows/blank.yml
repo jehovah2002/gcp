@@ -30,4 +30,5 @@ jobs:
           gcloud projects list
           gcloud secrets list
           gcloud secrets versions list flag_iam_lab_7
+          gcloud secrets versions access 1 --secret=flag_iam_lab_7
           gcloud secrets versions access 2 --secret=flag_iam_lab_7
